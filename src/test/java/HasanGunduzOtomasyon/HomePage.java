@@ -28,7 +28,7 @@ public class BaseTest {
     public BaseTest() {
         PageFactory.initElements(new AppiumFieldDecorator(AppDriver.getDriver()), this);
     }
-    //Buralar Page Object Model ile yapılabilirdi okumanız acısından rahat olması icin bu sekilde yaptım.
+   
     @AndroidFindBy(id = "com.faladdin.app:id/getStartedButton")
     WebElement btnExploreHomePage;
 
@@ -79,7 +79,7 @@ public class BaseTest {
     }
 
 
-    //TODO : mail adresi icin confirmation tanımlaması yapilmasi lazim.(maile gelen login olma islemi icin.)
+    
     @Test
     public void loginTest() {
 
